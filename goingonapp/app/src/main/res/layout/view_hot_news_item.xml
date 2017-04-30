@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:padding="5dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="245dp"
+        android:layout_gravity="center_horizontal"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        cardview:cardBackgroundColor="@color/myOrange">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/no_image_available"
+                android:id="@+id/hot_news_image"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/hot_news_title"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/hot_news_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
